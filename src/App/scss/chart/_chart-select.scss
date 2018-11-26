@@ -1,0 +1,15 @@
+.app-dashboard__chart-section__selection {
+  select {
+    background: $main;
+    cursor:pointer;
+    padding:0.4em;
+    min-width:200px;
+    color: $secondary;
+    border:none;
+    outline:none;
+    font-size: 1em;
+    &:focus, &:hover {
+      outline:none;
+    }
+  }
+}

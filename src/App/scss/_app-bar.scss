@@ -1,0 +1,26 @@
+.crypto-wrapper__bar {
+  display:grid;
+  grid-template-columns: 180px auto 100px 100px 20px;
+  @media all and (max-width:450px) {
+    grid-template-columns: 100%;
+    text-align:center;
+    grid-gap: 20px;
+  }
+  margin-bottom:3em;
+  .bar-logo {
+    font-size:2em;
+  }
+  .bar-button {
+    cursor: pointer;
+    &:hover {
+      color: $secondary;
+    }
+    &[data-active=true] {
+      color: $secondary;
+      text-shadow:0px 0px 60px $secondary;
+    }
+  }
+  .crypto-wrapper__bar__theme-selector > div {
+    cursor: pointer;
+  }
+}

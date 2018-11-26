@@ -1,0 +1,24 @@
+.app-modal {
+  position: fixed;
+  top:0;
+  left:0;
+  background:$main-lighter;
+  color:$color;
+  font-size:1.5em;
+  width:100%;
+  text-align:center;
+  padding:10px 0px;
+  &.alert {
+    border-bottom:5px solid $alert-color;
+  }
+  &.success {
+    border-bottom:5px solid $success-color;
+  }
+  &.app-modal-hidden {
+    opacity: 0;
+  }
+  &.app-modal-visible {
+    opacity: 1;
+    transition: all 0.5s;
+  }
+}

@@ -1,0 +1,20 @@
+.app-dashboard__chart-section__chart {
+  background: $main-lighter;
+  padding:1em;
+  text-align:center;
+  @media all and (max-width:700px) {
+    margin-top:15px;
+  }
+  .highcharts-credits {
+    display:none;
+  }
+  .highcharts-root text {
+    color:$color!important;
+    fill:$color!important;
+    font-weight:600;
+    tspan {
+      font-size:1em;
+    }
+  }
+
+}

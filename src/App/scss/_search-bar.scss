@@ -1,0 +1,17 @@
+.app-search-bar {
+  width:100%;
+  input {
+    width:100%;
+    padding:15px 0px 10px 0px;
+    font-size:1em;
+    background:none;
+    border:none;
+    border-bottom:1px solid $color;
+    color: $secondary;
+    outline:none;
+    &:focus {
+      outline:none;
+      border-bottom:1px solid $secondary;
+    }
+  }
+}

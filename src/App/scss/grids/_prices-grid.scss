@@ -1,6 +1,35 @@
 .app__dashboard-prices-grid {
   display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  grid-gap:15px;
+  margin: 30px 0;
   .dashboard-prices-grid__single {
-
+    background:$main-lighter;
+    font-weight: 600;
+    padding:10px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    &[data-active=true] {
+      cursor:default!important;
+      box-shadow: 0px 0px 5px 1px $secondary-color;
+    }
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0px 0px 5px 1px $secondary-color;
+    }
+    .price-change {
+     &[data-price=true] {
+      color: $success-color;
+       }
+     &[data-price=false] {
+       color: $alert-color;
+      }
+    }
+    .price-symbol {
+      justify-self:right;
+    }
+    .price-price {
+      font-size:1.5em;
+    }
   }
 }

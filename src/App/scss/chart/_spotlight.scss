@@ -1,0 +1,14 @@
+.app-dashboard__chart-section__spotlight {
+  background: $main-lighter;
+  padding:1em;
+  text-align:center;
+  .spotlight-name {
+
+  }
+  .spotlight-image {
+    img {
+      padding-top:1em;
+      height:100px;
+    }
+  }
+}

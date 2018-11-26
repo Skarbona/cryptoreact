@@ -1,24 +1,16 @@
 import React from 'react';
-import ConfirmButton from './ConfirmButton'
-import WelcomeMessage from './WelcomeMessage'
 import Page from '../Shared/Page'
-import CoinGrid from './Coins/CoinGrid'
-import SettingModal from './SettingModal'
-import SearchBar from './Search/SearchBar';
+import PriceGrid from './PriceGrid/PriceGrid'
+import ChartSection from './ChartSection'
 
-const Settings = () => {
+
+const Dashboard = () => {
     return (
-        <Page name="Settings">
-            <SettingModal/>
-            <div className="app-settings">
-                <WelcomeMessage/>
-                <CoinGrid topSection/>
-                <ConfirmButton />
-                <SearchBar/>
-                <CoinGrid />
-            </div>
+        <Page name="Dashboard">
+            <PriceGrid/>
+            <ChartSection/>
         </Page>
     );
 };
 
-export default Settings;
+export default Dashboard;

@@ -3,18 +3,24 @@ import './App.scss';
 import AppBar from './components/AppBar/AppBar';
 import AppProvider from './containers/AppProvider';
 import Settings from './components/Settings/'
+import Content from './components/Shared/Content'
+import Dashboard from './components/Dashboard'
+import ThemeWrapper from './components/Shared/ThemeWrapper'
 
-class Index extends Component {
+class App extends Component {
   render() {
     return (
-      <div className="crypto-wrapper">
           <AppProvider>
+              <ThemeWrapper>
               <AppBar/>
-              <Settings/>
+              <Content>
+                <Settings/>
+                <Dashboard/>
+              </Content>
+              </ThemeWrapper>
           </AppProvider>
-      </div>
     );
   }
 }
 
-export default Index;
+export default App;
